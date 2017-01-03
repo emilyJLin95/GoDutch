@@ -8,6 +8,99 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBackground"
     tools:context="porkbuns.godutch.HomePageActivity">
+
+    <ImageView
+        android:id="@+id/plate_background"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_shape"
+
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/friends_button"
+
+        android:text="Friends"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        android:paddingRight="20dp"
+        android:paddingBottom="25dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/friends_button_shape"
+
+        android:onClick="startFriends"
+        android:layout_margin="25dp"
+        android:layout_alignBottom="@+id/plate_background"
+        android:layout_alignRight="@id/plate_background"/>
+
+    <Button
+        android:id="@+id/history_button"
+
+        android:text="History"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:background="@drawable/history_button_shape"
+
+        android:onClick="startHistory"
+        android:layout_margin="25dp"
+        android:layout_alignBottom="@+id/plate_background"
+        android:layout_alignLeft="@id/plate_background"/>
+
+    <Button
+        android:id="@+id/profile_button"
+
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
+
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/profile_button_shape"
+
+        android:onClick="startProfile"
+        android:layout_alignTop="@id/plate_background"
+        android:layout_margin="25dp" />
+
+    <Button
+        android:id="@+id/meal_button"
+
+        android:text="Start meal"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingRight="20dp"
+
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:background="@drawable/meal_button_shape"
+
+        android:layout_margin="25dp"
+        android:onClick="startMeal"
+        android:layout_alignTop="@+id/plate_background"
+        android:layout_alignRight="@+id/plate_background" />
+
+
 
 </RelativeLayout>
